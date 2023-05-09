@@ -1,0 +1,91 @@
+:root {
+background: purple;
+}
+
+html {
+  max-width: 720px;
+  background: Blue;
+}
+
+body {
+
+  background: #fdfcfc;
+}
+
+* {
+  color: red;
+}
+h1 {
+  color: rgb(13, 196, 13);
+}
+
+.box {
+  background: #a09999;
+}
+#user {
+  color: rgb(177, 130, 0)
+}
+h1, h2, button {
+  color: red;
+}
+.button { 
+  background: indigo;
+  color: white;
+}
+
+
+.card-dark {
+  background: #c9c1c1;
+}
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: rgb(255, 0, 242);
+}
+
+.item:first-of-type {
+  color: rgb(247, 7, 7);
+}
+.item:nth-child(3n){
+  color: yellowgreen;
+}
+
+li:not(.item) {
+  color:rgb(100, 0, 194)
+}
+
+li:empty {
+  height: 10px;
+  background: Red;
+}
+
+.input-dark {
+  background: rgb(153, 146, 146);
+}
+
+.input-dark[required] {
+  background: red;
+}
+
+.input-dark[type="number"] {
+  background: rgb(28, 160, 57);
+}
+.small-img[alt~='small'] {
+  height: 400px;
+}
+a[rel='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: violet;
+}
+a[class^='btn'] {
+  background: rgb(82, 2, 82);
+}
