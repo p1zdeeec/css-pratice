@@ -9,6 +9,7 @@
 }
 .header {
 padding: 24px;
+border-bottom: 1px solid #dee2e6;
 }
 
 .logo {
@@ -58,6 +59,7 @@ margin-bottom: 80px;
 
     .footer {
         padding: 24px 0;
+        border-top: 1px solid #dee2e6;
     }
 
     .footer_copyright {
@@ -141,3 +143,27 @@ color: #212529;
         font-size: 19px;
         padding: 9px;
     }
+.card {
+    border: 2px double blue;
+    border-right: 10px solid yellow;
+    border-radius: 70% 50% 30% 10%;
+}
+
+.card:hover {
+    outline: 3px solid red;
+    outline-offset: 10px ;
+    border-radius: 10px 50px;
+}
+
+.btn {
+    border-radius: 50%;
+}
+
+h1 {
+    text-shadow: 3px -2px 7px red;
+}
+
+.plans_card:nth-child(2) > .card {
+    background: red;
+}
+
