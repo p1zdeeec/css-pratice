@@ -180,230 +180,511 @@ router.get('/template-2', function (req, res) {
   res.render('template-2', {
     layout: 'template-2',
     page: {
-      title: "Example Page"
+      title: 'Example Page',
     },
     header: [
       {
-        text: "Features",
-        url: "https://example.com/home"
+        text: 'Features',
+        url: 'https://example.com/home',
       },
       {
-        text: "Enterprise",
-        url: "https://example.com/about"
+        text: 'Enterprise',
+        url: 'https://example.com/about',
       },
       {
-        text: "Support",
-        url: "https://example.com/services"
-      }
+        text: 'Support',
+        url: 'https://example.com/services',
+      },
     ],
     hero: {
-      title: "Pricing",
+      title: 'Pricing',
       text: "Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.",
       button: {
-        text: "Get started",
-        url: "https://example.com/get-started"
-      }
+        text: 'Get started',
+        url: 'https://example.com/get-started',
+      },
     },
     preview: [
       {
-        date: "Oct 24",
-        title: "Latest post",
-        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        date: 'Oct 24',
+        title: 'Latest post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
         category: [
           {
             id: 1,
-            text: "World"
+            text: 'World',
           },
           {
             id: 3,
-            text: "Hot"
-          }
-        ]
+            text: 'Hot',
+          },
+        ],
       },
       {
-        date: "Oct 26",
-        title: "Featured story",
-        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        date: 'Oct 26',
+        title: 'Featured story',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
         category: [
           {
             id: 2,
-            text: "Sport"
-          }
-        ]
+            text: 'Sport',
+          },
+        ],
       },
       {
-        date: "Oct 28",
-        title: "Popular post",
-        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        date: 'Oct 28',
+        title: 'Popular post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
         category: [
           {
             id: 3,
-            text: "Hot"
-          }
-        ]
+            text: 'Hot',
+          },
+        ],
       },
       {
-        date: "Oct 30",
-        title: "Trending topic",
-        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        date: 'Oct 30',
+        title: 'Trending topic',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
         category: [
           {
             id: 4,
-            text: "Fashion"
-          }
-        ]
-      }
+            text: 'Fashion',
+          },
+        ],
+      },
     ],
     categories: [
       {
         id: 1,
-        text: "World"
+        text: 'World',
       },
       {
         id: 2,
-        text: "Sport"
+        text: 'Sport',
       },
       {
         id: 3,
-        text: "Hot"
+        text: 'Hot',
       },
       {
         id: 4,
-        text: "Fashion"
-      }
+        text: 'Fashion',
+      },
     ],
     news: [
       {
-        title: "New blog post",
-        date: "February 14",
-        author: "John",
-        description: "This blog post discusses various topics related to web development and design, including best practices and emerging trends."
+        title: 'New blog post',
+        date: 'February 14',
+        author: 'John',
+        description:
+          'This blog post discusses various topics related to web development and design, including best practices and emerging trends.',
       },
       {
-        title: "Latest blog post",
-        date: "March 1",
-        author: "Emily",
-        description: "This blog post covers a range of topics, from productivity tips to personal development strategies, with the aim of helping readers lead more fulfilling lives."
+        title: 'Latest blog post',
+        date: 'March 1',
+        author: 'Emily',
+        description:
+          'This blog post covers a range of topics, from productivity tips to personal development strategies, with the aim of helping readers lead more fulfilling lives.',
       },
       {
-        title: "Popular blog post",
-        date: "April 7",
-        author: "David",
-        description: "This blog post focuses on the importance of networking and building relationships in business, providing tips and insights for professionals of all levels."
+        title: 'Popular blog post',
+        date: 'April 7',
+        author: 'David',
+        description:
+          'This blog post focuses on the importance of networking and building relationships in business, providing tips and insights for professionals of all levels.',
       },
       {
-        title: "Top blog post",
-        date: "May 12",
-        author: "Sophie",
-        description: "This blog post examines the latest trends and innovations in the field of marketing, with a particular focus on social media and content marketing strategies."
-      }
+        title: 'Top blog post',
+        date: 'May 12',
+        author: 'Sophie',
+        description:
+          'This blog post examines the latest trends and innovations in the field of marketing, with a particular focus on social media and content marketing strategies.',
+      },
     ],
-    about: "We are a dynamic team of experienced journalists, dedicated to delivering the latest news and up-to-date analysis on a range of topics. With our finger on the pulse of global affairs, we strive to provide an objective and insightful perspective on the events shaping our world. Our team comprises individuals with diverse backgrounds and expertise, allowing us to provide comprehensive coverage across all sectors.",
+    about:
+      'We are a dynamic team of experienced journalists, dedicated to delivering the latest news and up-to-date analysis on a range of topics. With our finger on the pulse of global affairs, we strive to provide an objective and insightful perspective on the events shaping our world. Our team comprises individuals with diverse backgrounds and expertise, allowing us to provide comprehensive coverage across all sectors.',
     archive: [
       {
-        text: "March 2014",
-        url: "https://example.com/march-2014"
+        text: 'March 2014',
+        url: 'https://example.com/march-2014',
       },
       {
-        text: "February 2014",
-        url: "https://example.com/february-2014"
+        text: 'February 2014',
+        url: 'https://example.com/february-2014',
       },
       {
-        text: "January 2014",
-        url: "https://example.com/january-2014"
+        text: 'January 2014',
+        url: 'https://example.com/january-2014',
       },
       {
-        text: "December 2013",
-        url: "https://example.com/december-2013"
+        text: 'December 2013',
+        url: 'https://example.com/december-2013',
       },
       {
-        text: "November 2013",
-        url: "https://example.com/november-2013"
+        text: 'November 2013',
+        url: 'https://example.com/november-2013',
       },
       {
-        text: "October 2013",
-        url: "https://example.com/october-2013"
+        text: 'October 2013',
+        url: 'https://example.com/october-2013',
       },
       {
-        text: "September 2013",
-        url: "https://example.com/september-2013"
-      }
+        text: 'September 2013',
+        url: 'https://example.com/september-2013',
+      },
     ],
     social: [
       {
-        text: "Instagram",
-        url: "https://www.instagram.com/"
+        text: 'Instagram',
+        url: 'https://www.instagram.com/',
       },
       {
-        text: "Facebook",
-        url: "https://www.facebook.com/"
+        text: 'Facebook',
+        url: 'https://www.facebook.com/',
       },
       {
-        text: "Google",
-        url: "https://www.instagram.com/"
-      }
+        text: 'Google',
+        url: 'https://www.instagram.com/',
+      },
     ],
     footer: [
       {
-        title: "Features",
+        title: 'Features',
         links: [
           {
-            text: "Cool stuff",
-            url: "https://example.com/cool-stuff"
+            text: 'Cool stuff',
+            url: 'https://example.com/cool-stuff',
           },
           {
-            text: "Random feature",
-            url: "https://example.com/random-feature"
+            text: 'Random feature',
+            url: 'https://example.com/random-feature',
           },
           {
-            text: "Team feature",
-            url: "https://example.com/team-feature"
+            text: 'Team feature',
+            url: 'https://example.com/team-feature',
           },
           {
-            text: "Stuff for developers",
-            url: "https://example.com/stuff-for-developers"
-          }
-        ]
+            text: 'Stuff for developers',
+            url: 'https://example.com/stuff-for-developers',
+          },
+        ],
       },
       {
-        title: "Resources",
+        title: 'Resources',
         links: [
           {
-            text: "Resource name",
-            url: "https://example.com/resource-name"
+            text: 'Resource name',
+            url: 'https://example.com/resource-name',
           },
           {
-            text: "Another resource",
-            url: "https://example.com/another-resource"
+            text: 'Another resource',
+            url: 'https://example.com/another-resource',
           },
           {
-            text: "Final resource",
-            url: "https://example.com/final-resource"
-          }
-        ]
+            text: 'Final resource',
+            url: 'https://example.com/final-resource',
+          },
+        ],
       },
       {
-        title: "About",
+        title: 'About',
         links: [
           {
-            text: "Team",
-            url: "https://example.com/team"
+            text: 'Team',
+            url: 'https://example.com/team',
           },
           {
-            text: "Locations",
-            url: "https://example.com/locations"
+            text: 'Locations',
+            url: 'https://example.com/locations',
           },
           {
-            text: "Privacy",
-            url: "https://example.com/privacy"
+            text: 'Privacy',
+            url: 'https://example.com/privacy',
           },
           {
-            text: "Terms",
-            url: "https://example.com/terms"
-          }
-        ]
-      }
-    ]
+            text: 'Terms',
+            url: 'https://example.com/terms',
+          },
+        ],
+      },
+    ],
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/template-3', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('template-3', {
+    page: {
+      title: 'Example Page',
+    },
+    layout: 'template-3',
+    header: [
+      {
+        text: 'Features',
+        url: 'https://example.com/home',
+      },
+      {
+        text: 'Enterprise',
+        url: 'https://example.com/about',
+      },
+      {
+        text: 'Support',
+        url: 'https://example.com/services',
+      },
+    ],
+
+    hero: {
+      title:
+        'First featurette heading. It’ll blow your mind.',
+      text: 'Some great placeholder content for the first featurette here. Imagine some exciting prose here.',
+      photo: 'https://picsum.photos/500/500',
+    },
+
+    blog: [
+      {
+        title: 'Latest post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Featured story',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Popular post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+    ],
+
+    form: {
+      title: 'Sign up form',
+      info: 'Some placeholder content in a paragraph below the heading and date.',
+      button: 'Sign up',
+      href: 'https://example.com/',
+    },
+
+    footer: [
+      {
+        title: 'Features',
+        links: [
+          {
+            text: 'Cool stuff',
+            url: 'https://example.com/cool-stuff',
+          },
+          {
+            text: 'Random feature',
+            url: 'https://example.com/random-feature',
+          },
+          {
+            text: 'Team feature',
+            url: 'https://example.com/team-feature',
+          },
+          {
+            text: 'Stuff for developers',
+            url: 'https://example.com/stuff-for-developers',
+          },
+        ],
+      },
+      {
+        title: 'Resources',
+        links: [
+          {
+            text: 'Resource name',
+            url: 'https://example.com/resource-name',
+          },
+          {
+            text: 'Another resource',
+            url: 'https://example.com/another-resource',
+          },
+          {
+            text: 'Final resource',
+            url: 'https://example.com/final-resource',
+          },
+        ],
+      },
+      {
+        title: 'About',
+        links: [
+          {
+            text: 'Team',
+            url: 'https://example.com/team',
+          },
+          {
+            text: 'Locations',
+            url: 'https://example.com/locations',
+          },
+          {
+            text: 'Privacy',
+            url: 'https://example.com/privacy',
+          },
+          {
+            text: 'Terms',
+            url: 'https://example.com/terms',
+          },
+        ],
+      },
+    ],
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/template-4', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('template-4', {
+    page: {
+      title: 'Example Page',
+    },
+
+    header: [
+      {
+        text: 'Features',
+        url: 'https://example.com/home',
+      },
+      {
+        text: 'Enterprise',
+        url: 'https://example.com/about',
+      },
+      {
+        text: 'Support',
+        url: 'https://example.com/services',
+      },
+    ],
+
+    main: {
+      heading: 'Oh yeah, it’s that good. See for yourself.',
+      descriotion:
+        'Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.',
+      image: 'https://picsum.photos/500/500',
+      button: 'View details',
+      href: 'https://example.com/',
+    },
+
+    featured: [
+      {
+        heading: 'Featured title',
+        info: "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
+        linkText: 'Call to action',
+        linkUrl: 'https://example.com/',
+        photo: 'https://picsum.photos/64/64',
+      },
+      {
+        heading: 'Featured title',
+        info: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        linkText: 'Call to action',
+        linkUrl: 'https://example.com/',
+        photo: 'https://picsum.photos/64/64',
+      },
+      {
+        heading: 'Featured title',
+        info: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        linkText: 'Call to action',
+        linkUrl: 'https://example.com/',
+        photo: 'https://picsum.photos/64/64',
+      },
+    ],
+
+    actions: [
+      {
+        heading: 'Checkout form',
+        text: 'Checkout',
+        url: 'https://example.com/',
+      },
+      {
+        heading: 'Login form',
+        text: 'Login',
+        url: 'https://example.com/',
+      },
+      {
+        heading: 'Sign up form',
+        text: 'Sign up',
+        url: 'https://example.com/',
+      },
+    ],
+
+    footer: [
+      {
+        title: 'Features',
+        links: [
+          {
+            text: 'Cool stuff',
+            url: 'https://example.com/cool-stuff',
+          },
+          {
+            text: 'Random feature',
+            url: 'https://example.com/random-feature',
+          },
+          {
+            text: 'Team feature',
+            url: 'https://example.com/team-feature',
+          },
+          {
+            text: 'Stuff for developers',
+            url: 'https://example.com/stuff-for-developers',
+          },
+        ],
+      },
+      {
+        title: 'Resources',
+        links: [
+          {
+            text: 'Resource name',
+            url: 'https://example.com/resource-name',
+          },
+          {
+            text: 'Another resource',
+            url: 'https://example.com/another-resource',
+          },
+          {
+            text: 'Final resource',
+            url: 'https://example.com/final-resource',
+          },
+        ],
+      },
+      {
+        title: 'About',
+        links: [
+          {
+            text: 'Team',
+            url: 'https://example.com/team',
+          },
+          {
+            text: 'Locations',
+            url: 'https://example.com/locations',
+          },
+          {
+            text: 'Privacy',
+            url: 'https://example.com/privacy',
+          },
+          {
+            text: 'Terms',
+            url: 'https://example.com/terms',
+          },
+        ],
+      },
+    ],
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
