@@ -557,7 +557,7 @@ router.get('/template-4', function (req, res) {
     page: {
       title: 'Example Page',
     },
-
+    layout: 'template-4',
     header: [
       {
         text: 'Features',
