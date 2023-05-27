@@ -1,8 +1,10 @@
 {{#with data}}
 <div class="card">
-    <img src="{{photo}}" alt="Featured photo" class="card_image">
-    <h2 class="card_title">{{heading}}</h2>
-    <p class="card_info">{{info}}</p>
+    <div class="card_content">
+        <img src="{{photo}}" alt="Featured photo" class="card_image">
+        <h2 class="card_title">{{heading}}</h2>
+        <p class="card_info">{{info}}</p>
+    </div>
     <a href="{{linkUrl}}" class="card_link">{{linkText}}</a>
 </div>
 {{/with}}
