@@ -1,0 +1,86 @@
+<header class="header row g-0">
+
+    <div class="col-3">
+        {{> logo}}
+    </div>
+
+    <nav class="header_nav col-9 ">
+        <div class="header_nav_right">
+            {{> nav list=header}}
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+
+    {{#with info}}
+    <div class="info">
+        <h1 class="title">{{title}}</h1>
+        <p class="text">{{description}}</p>
+    </div>
+    {{/with}}
+
+    {{#with form}}
+    {{> cardForm data=this}}
+    {{/with}}
+</main>
+
+<div class="updates">
+    {{#with updates}}
+    <h2 class="updates_title">{{title}}</h2>
+
+
+    {{#each list}}
+    <div class="updates_list">
+        <img src="#" alt="User" class="updates_list_img">
+        <div class="updates_list_nickname">{{nickname}}</div>
+        <p class="updates_list_text">{{description}}</p>
+    </div>
+    {{/each}}
+
+    {{#with show_all}}
+    <a href="{{url}}" class="updates_link">{{text}}</a>
+    {{/with}}
+
+    {{/with}}
+
+</div>
+
+{{#with expirience}}
+<div class="expirience">
+    <h2 class="expirience_title">{{title}}</h2>
+    {{badge}}
+
+    <div class="expirience_list">
+        {{#each list}}
+        <div class="card_expirience">
+            <strong class="expirience_list_name">{{name}}</strong>
+            <p class="expirience_list_details">{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+{{/with}}
+
+
+
+
+
+
+
+<footer class="page_block">
+    <div class="row g-0 footer">
+        <div class="col-3">
+            {{> logo}}
+            <span class="footer_copyright">Copyright 2023-2024</span>
+        </div>
+
+        {{#each footer}}
+        <div class="col-3">
+            <span class="footer_title">{{title}}</span>
+            {{> nav list=links isVertical=true}}
+        </div>
+        {{/each}}
+    </div>
+</footer>
