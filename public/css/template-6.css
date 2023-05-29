@@ -351,6 +351,31 @@ gap: var(--space-l);
         background: #F8F9FA;
         border-radius: 4px; 
     } 
+    .expirience_badge {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 24px;
+        gap: 12px;
+
+        right: -20px;
+        top: 1220px;
+
+        background: #FF7347;
+        border-radius: 70px;
+        transform: rotate(30deg);
+
+    }
+
+    .badge_text {
+        
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
+        color: #FFFFFF;
+    }
     
     .expirience_title {
         display: flex;
