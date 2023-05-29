@@ -300,12 +300,13 @@ gap: var(--space-l);
 
     .updates_list {
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
         padding: 0px 0px 12px;
         gap: 12px;
 
         border-bottom: 1px solid #DEE2E6;
+
+         
     }
 
     .updates_list_image {
@@ -314,6 +315,8 @@ gap: var(--space-l);
         height: 32px;
 
         border-radius: 4px; 
+
+      
     }
 
     .updates_list_nickname {
@@ -350,6 +353,7 @@ gap: var(--space-l);
 
         background: #F8F9FA;
         border-radius: 4px; 
+        position: relative;
     } 
     .expirience_badge {
         position: absolute;
@@ -359,8 +363,8 @@ gap: var(--space-l);
         padding: 12px 24px;
         gap: 12px;
 
-        right: -20px;
-        top: 1220px;
+        right: 0px;
+        top: 0px;
 
         background: #FF7347;
         border-radius: 70px;
