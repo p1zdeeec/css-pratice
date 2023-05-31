@@ -1,28 +1,7 @@
 <header class="header">
     {{#with header}}
-    <div class="header1">
-        <div>
-            {{> logo}}
-        </div>
-        <nav class="header_nav">
-            <div class="header_nav_right">
-                {{> nav list=header}}
-            </div>
-        </nav>
-    </div>
 
-    <div class="header_footer">
-        <div>
-            {{#with ad}}
-            <a class="ad" href="{{url}}"><span class="ad_bradge">Ad</span>{{text}}</a>
-            {{/with}}
-        </div>
-
-
-        <div class="users">
-            Users online:{{userOnline}}
-        </div>
-    </div>
+    {{> headerDark data=this}}
 
     {{/with}}
 </header>
@@ -50,30 +29,12 @@
 <div class="articles">
 
     {{#each articles}}
-    <div class="card_articles ">
-
-        {{#if isNew}} <span class="badge_new">NEW</span> {{/if}}
-        <div class="img">
-            <img src="{{photo}}" alt="" class="photo_articles" id="{{id}}">
-        </div>
-        <div class="card_text">
-            <strong class="articles_name">{{name}}</strong>
-            <p class="articles_description">{{description}}</p>
-            <button class="articles_button">Read All</button>
-        </div>
-    </div>
+    {{>articleCardDark data=this}}
     {{/each}}
 </div>
 
 
 
 <footer class="footer">
-    <div>
-        {{#each footer.pages}}
-
-        <a href="{{path}}" class="footer_name">{{name}}</a>
-
-        {{/each}}
-    </div>
-    <span class="footer_copyright">{{footer.copyright}}</span>
+    {{>footerDark data=this}}
 </footer>
