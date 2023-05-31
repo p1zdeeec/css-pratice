@@ -1,0 +1,79 @@
+<header class="header">
+    {{#with header}}
+    <div class="header1">
+        <div>
+            {{> logo}}
+        </div>
+        <nav class="header_nav">
+            <div class="header_nav_right">
+                {{> nav list=header}}
+            </div>
+        </nav>
+    </div>
+
+    <div class="header_footer">
+        <div>
+            {{#with ad}}
+            <a class="ad" href="{{url}}"><span class="ad_bradge">Ad</span>{{text}}</a>
+            {{/with}}
+        </div>
+
+
+        <div class="users">
+            Users online:{{userOnline}}
+        </div>
+    </div>
+
+    {{/with}}
+</header>
+
+<main class="hero">
+    {{#with hero}}
+    <h1 class="hero_title">{{title}}</h1>
+    <p class="hero_description">{{description}}</p>
+    <button class="hero_button" href="{{button.url}}">{{button.text}}</button>
+    {{/with}}
+</main>
+
+<div class="about">
+    {{#with about}}
+    <h2 class="about_heading">{{heading}}</h2>
+    <p class="about_info">{{info}}</p>
+    {{/with}}
+</div>
+
+<div class="articles_header">
+    <strong class="articles_title">Our Articles</strong>
+    <button class="header_button">View All</button>
+</div>
+
+<div class="articles">
+
+    {{#each articles}}
+    <div class="card_articles ">
+
+        {{#if isNew}} <span class="badge_new">NEW</span> {{/if}}
+        <div class="img">
+            <img src="{{photo}}" alt="" class="photo_articles" id="{{id}}">
+        </div>
+        <div class="card_text">
+            <strong class="articles_name">{{name}}</strong>
+            <p class="articles_description">{{description}}</p>
+            <button class="articles_button">Read All</button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+
+
+<footer class="footer">
+    <div>
+        {{#each footer.pages}}
+
+        <a href="{{path}}" class="footer_name">{{name}}</a>
+
+        {{/each}}
+    </div>
+    <span class="footer_copyright">{{footer.copyright}}</span>
+</footer>
