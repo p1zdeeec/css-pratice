@@ -117,18 +117,23 @@ gap: var(--space-l);
 
         padding: var(--space-b);
         border-bottom: 1px solid var(--color-border);
+        
+        max-width: 100%;
     }
 
     .hero_image {
         width: 500px;
         height: 500px;
         border-radius: var(--border-radius);
+        max-width: 100%;
     }
 
     .hero_content {
         display: flex;
         flex-direction: column;
         grid-area: var(--space-l);
+
+        max-width: 100%;
     }
 
     .hero_title {
@@ -143,6 +148,8 @@ gap: var(--space-l);
         font-size: var(--size-l);
         font-weight: var(--weight-text);
         line-height: 150%;
+
+       
     }
 
     .blog {
@@ -231,4 +238,27 @@ gap: var(--space-l);
         color: var(--color-text);
     }
 
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media all and (max-width: 800px) {
+        .blog {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media all and (min-width: 0px) and (max-width: 600px) {
+        .blog {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media all and (not (min-width: 500px)) {
+        .page_content {
+            background-color: red;
+        }
+    }
+    
     
