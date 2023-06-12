@@ -172,7 +172,12 @@ body {
         position: relative;
     }
 
-
+    .main__double  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-9);
+    }
+    
     .purchase {
         border: 1px solid var(--color-light);
     }
