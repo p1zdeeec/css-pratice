@@ -52,16 +52,6 @@
                     <span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg')"></span>
                     <span class="text text--light">Products</span>
                 </a>
-
-                <div class="relative click">
-                    <div class="field field--select relative">
-                        <span class="text text--light">Choose...</span>
-                    </div>
-                    <select class="field__select">
-                        <option value="Cat">Cat</option>
-                        <option value="Dog">Dog</option>
-                    </select>
-                </div>
             </nav>
         </aside>
         <header class="header">
@@ -94,7 +84,7 @@
         </header>
         <main class="main">
             <div class="layout">
-                <section class="box analytic__block">
+                <section class="box analytic__block vertical">
                     <div class="analytic analytic--double analytic--purple">
                         <span class="icon analytic__button icon--button icon--color-purple click"
                             style="background-image: url('/svg/analytic/money.svg')">
@@ -149,26 +139,114 @@
             </div>
 
 
-            <div class="main__double">
-                <section class="box purchase">
-                    <div class="purchase_title text">Purchase List</div>
+            <div class="main__double layout">
+                <section class="box">
+                    <div class="title text">Purchase List</div>
+
+                    <hr class="devider">
 
                     <div class="purchase__list text">
-                        <div>Test</div>
-                        <div>Test</div>
-                        <div>Test</div>
-                        <div>Test</div>
-                        <div>Test</div>
-                        <div>Test</div>
-                        <div>Test</div>
-                        <div>Test</div>
+                        <div>ID437661</div>
+                        <div>AirOn ProCam</div>
+                        <div>132.32 EUR</div>
+                        <div>Customer</div>
+                        <div>May 11, 2023, 14:21</div>
+                        <div>7/8 USB Type-C</div>
+                        <div class="text__warning">Not paid</div>
+                        <div>robin@com.de</div>
                     </div>
+
+                    <hr class="devider">
+
+                    <div class="purchase__list text">
+                        <div>ID437661</div>
+                        <div>PHILIPS Essential</div>
+                        <div>543 USD</div>
+                        <div>Customer</div>
+                        <div>May 11, 2023, 14:21</div>
+                        <div>HD9200/90</div>
+                        <div class="text__success">Pay by Stripe</div>
+                        <div>dima@com.ua</div>
+                    </div>
+
+                    <hr class="devider">
 
                 </section>
 
-                <section class="box payment">
+                <section class="box vertical">
+                    <div class="title text">Payment</div>
 
-                    <div class="">Test </div>
+                    <hr class="devider">
+
+
+                    <div class="vertical">
+                        <form class="checkout__radio text">
+                            <div>
+                                <input type="radio" name="payment" checked>Credit card
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" checked>Debit card
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" checked>PayPal
+                            </div>
+                        </form>
+
+                        <form class="checkout__creditcard text vertical">
+                            <div>
+                                Name on card
+                                <input type="text" placeholder="" class="field">
+                            </div>
+
+                            <div>
+                                Credit card number
+                                <input type="text" placeholder="" class="field">
+                            </div>
+
+                            <div>
+                                Expiration
+                                <input type="text" placeholder="" class="field">
+                            </div>
+
+                            <div>
+                                CVV
+                                <input type="text" placeholder="" class="field">
+                            </div>
+                        </form>
+                        <hr class="devider">
+
+                        <form class="checkout__creditcard text vertical">
+                            <div>
+                                Country
+                                <div class="relative click">
+                                    <div class="field field--select relative">
+                                        <span class="text text--light">Choose...</span>
+                                    </div>
+                                    <select class="field__select">
+                                        <option value="Cat">Ukraine</option>
+                                        <option value="Dog">USA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                State
+                                <div class="relative click">
+                                    <div class="field field--select relative">
+                                        <span class="text text--light">Choose...</span>
+                                    </div>
+                                    <select class="field__select">
+                                        <option value="Cat">Lviv</option>
+                                        <option value="Dog">NY</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+
+                        <hr class="devider">
+                    </div>
+
+                    <button class="checkout__button click">Continue to checkout</button>
                 </section>
             </div>
 
