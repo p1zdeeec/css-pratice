@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Dashboard page
+    </title>
+    <meta charset='utf-8' />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+    <link rel="manifest" href="/fav/site.webmanifest">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+    <link href='css/normalize.css' rel='stylesheet' />
+
+
+    <link href='css/dashboard.css' rel='stylesheet' />
+
+    <meta name="viewport"
+        content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="page page--dashboard">
+        <aside class="aside page__aside vertical vertical--big">
+            <div class="text aside__logo">
+                Sidebar
+            </div>
+            <nav class="vertical vertical--small">
+                <a href="#" class="nav-button nav-button--active click">
+                    <span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg')"></span>
+                    <span class="text text--light">Home</span>
+                </a>
+            </nav>
+
+            <nav class="vertical vertical--small">
+                <a href="#" class="nav-button click">
+                    <span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg')"></span>
+                    <span class="text text--light">Orders</span>
+                </a>
+            </nav>
+
+            <nav class="vertical vertical--small">
+                <a href="#" class="nav-button click">
+                    <span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg')"></span>
+                    <span class="text text--light">Products</span>
+                </a>
+
+                <div class="relative click">
+                    <div class="field field--select relative">
+                        <span class="text text--light">Choose...</span>
+                    </div>
+                    <select class="field__select">
+                        <option value="Cat">Cat</option>
+                        <option value="Dog">Dog</option>
+                    </select>
+                </div>
+            </nav>
+        </aside>
+        <header class="header">
+            <div class="layout header__content text--small">
+                <div class="header__search relative">
+                    <input type="text" placeholder="Search" class="text field field--header">
+                    <span class="icon header__icon--search"
+                        style="background-image: url('/svg/header/search.svg')"></span>
+                    <span class="icon icon--header--settings icon--button icon--color-blue click"
+                        style="background-image: url('/svg/header/settings.svg')"></span>
+                </div>
+                <div class="header__notification relative">
+                    <div class="notification__icon">
+                        <span class="icon notification--header--1 icon--button icon--color-yellow-light click"
+                            style="background-image: url('/svg/header/n1.svg')">
+                        </span>
+
+                        <span class="icon notification--header--1 icon--button icon--color-blue-white click"
+                            style="background-image: url('/svg/header/n2.svg')">
+                        </span>
+
+                        <span class="icon notification--header--1 icon--button icon--color-yellow-light click"
+                            style="background-image: url('/svg/header/n3.svg')">
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="layout">
+                <section class="box analytic__block">
+                    <div class="analytic analytic--double analytic--purple">
+                        <span class="icon analytic__button icon--button icon--color-purple click"
+                            style="background-image: url('/svg/analytic/money.svg')">
+                        </span>
+
+                        <div class="relative vertical vertical--small">
+                            <div class="analytic__title--big text text--light">$500.00</div>
+                            <div class="analytic__info text text--small text--gray-light">Total earning</div>
+
+                            <span class="icon analytic__arrow"
+                                style="background-image: url('/svg/analytic/purple-arrow.svg')">
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="analytic analytic--double analytic--blue">
+                        <span class="icon analytic__button icon--button icon--color-blue click"
+                            style="background-image: url('/svg/analytic/order.svg')">
+                        </span>
+
+                        <div class="relative vertical vertical--small">
+                            <div class="analytic__title--big text text--light">$961</div>
+                            <div class="analytic__info text text--small text--gray-light">Total Order</div>
+                        </div>
+                    </div>
+
+
+                    <div class="analytic row analytic--blue">
+                        <span class="icon analytic__button icon--button icon--color-blue click"
+                            style="background-image: url('/svg/analytic/money.svg')">
+                        </span>
+
+                        <div class="relative vertical vertical--small">
+                            <div class="analytic__title--default text text--light">$203k</div>
+                            <div class="analytic__info text text--small text--gray-light">Total Income</div>
+                        </div>
+                    </div>
+
+
+                    <div class="analytic row analytic--white">
+                        <span class="icon analytic__button icon--button icon--color-yellow-light click"
+                            style="background-image: url('/svg/analytic/iconShop.svg')">
+                        </span>
+
+                        <div class="relative vertical vertical--small">
+                            <div class="analytic__title--default text">$203k</div>
+                            <div class="analytic__info text text--small text--gray">Total Income</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="main__double">
+                <section class="box purchase">
+                    <div class="purchase_title text">Purchase List</div>
+
+                    <div class="purchase__list text">
+                        <div>Test</div>
+                        <div>Test</div>
+                        <div>Test</div>
+                        <div>Test</div>
+                        <div>Test</div>
+                        <div>Test</div>
+                        <div>Test</div>
+                        <div>Test</div>
+                    </div>
+
+                </section>
+
+                <section class="box payment">
+
+                    <div class="">Test </div>
+                </section>
+            </div>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
