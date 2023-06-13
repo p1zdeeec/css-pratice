@@ -306,11 +306,22 @@ body {
         left: calc(100% + var(--spacing-1));
     }
 
+    .purchase__block {
+        height: auto;
+
+    }
+
     .purchase__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr, 1fr;
         gap: var(--spacing-4);
+
+
+        padding: var(--spacing-2) 0;
+    }
+
+    .payment__block {
     }
 
  
